@@ -1,0 +1,6 @@
+FSharp.Core
+
+DotNetNuke.Core
+DotNetNuke.WebApi
+Microsoft.AspNet.WebApi
+System.ValueTuple

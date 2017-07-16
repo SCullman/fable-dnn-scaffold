@@ -1,0 +1,212 @@
+Fable daemon started on port 61225
+CWD: C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client
+cmd /C yarn run build
+yarn run v0.27.5
+$ webpack -p
+Bundling for production...
+Parsing ./Client.fsproj...
+fable: Compiled src\Client.fsproj
+fable: Compiled src\App.fs
+fable: Compiled src\Dnn.fs
+fable: Compiled ..\packages\Fable.Elmish.React\fable\react.fs
+fable: Compiled ..\packages\Fable.Elmish\fable\program.fs
+fable: Compiled ..\packages\Fable.PowerPack\fable\src\Promise.fs
+fable: Compiled ..\packages\Fable.PowerPack\fable\src\Fetch.fs
+fable: Compiled ..\packages\Fable.Elmish\fable\cmd.fs
+fable: Compiled ..\packages\Fable.Elmish.React\fable\common.fs
+Hash: 488918652ed969aa8c06
+Version: webpack 2.7.0
+Time: 15553ms
+        Asset     Size  Chunks             Chunk Names
+    bundle.js   207 kB       0  [emitted]  main
+bundle.js.map  1.99 MB       0  [emitted]  main
+  [11] ../packages/Fable.Core/fable-core/Symbol.js 1.96 kB {0} [built] [failed] [1 error]
+  [18] ../packages/Fable.Core/fable-core/List.js 1.96 kB {0} [built] [failed] [1 error]
+  [30] ./~/babel-runtime/helpers/classCallCheck.js 208 bytes {0} [built]
+  [31] ./~/babel-runtime/helpers/createClass.js 904 bytes {0} [built]
+  [41] ../packages/Fable.Core/fable-core/Util.js 1.96 kB {0} [built] [failed] [1 error]
+ [105] ../packages/Fable.Elmish/fable/cmd.fs 3.48 kB {0} [built]
+ [106] ../packages/Fable.Elmish/fable/program.fs 8.32 kB {0} [built]
+ [107] ../packages/Fable.PowerPack/fable/src/Promise.fs 5.53 kB {0} [built]
+ [139] ./~/react/react.js 56 bytes {0} [built]
+ [140] ./src/App.fs 4.25 kB {0} [built]
+ [144] ../packages/Fable.Core/fable-core/String.js 1.96 kB {0} [built] [failed] [1 error]
+ [199] ./src/Client.fsproj 25 bytes {0} [built]
+ [200] ./src/Dnn.fs 240 bytes {0} [built]
+ [202] ../packages/Fable.Elmish.React/fable/react.fs 780 bytes {0} [built]
+ [203] ../packages/Fable.PowerPack/fable/src/Fetch.fs 6.44 kB {0} [built]
+    + 280 hidden modules
+
+ERROR in ../packages/Fable.Core/fable-core/Symbol.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 16, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ./src/App.fs 3:0-70 4:0-66
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/Util.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 16, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ./src/App.fs 5:0-117
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/List.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 16, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ./src/App.fs 6:0-68
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/String.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 16, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ./src/App.fs 12:0-71
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/CurriedLambda.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.Elmish/fable/program.fs 8:0-70
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/Seq.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.Elmish/fable/program.fs 12:0-58
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/Serialize.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.Elmish/fable/program.fs 10:0-63
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/AsyncBuilder.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.Elmish/fable/program.fs 13:0-69
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/MailboxProcessor.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.Elmish/fable/program.fs 11:0-69
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/Result.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.PowerPack/fable/src/Promise.fs 5:0-60 6:0-59
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+
+ERROR in ../packages/Fable.Core/fable-core/Async.js
+Module build failed: ReferenceError: Unknown plugin "transform-runtime" specified in "base" at 18, attempted to resolve relative to "C:\\Users\\root\\Documents\\My Web Sites\\dnn9\\DesktopModules\\cfp\\spike\\packages\\Fable.Core\\fable-core"
+    at C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:180:17
+    at Array.map (native)
+    at Function.normalisePlugins (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:158:20)
+    at OptionManager.mergeOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:234:36)
+    at OptionManager.init (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\options\option-manager.js:368:12)
+    at File.initOptions (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:212:65)
+    at new File (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\file\index.js:135:24)
+    at Pipeline.transform (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-core\lib\transformation\pipeline.js:46:16)
+    at transpile (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:49:20)
+    at Object.module.exports (C:\Users\root\Documents\My Web Sites\dnn9\DesktopModules\cfp\spike\Client\node_modules\babel-loader\lib\index.js:174:20)
+ @ ../packages/Fable.Elmish/fable/cmd.fs 4:0-79
+ @ ./src/App.fs
+ @ ./src/Client.fsproj
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Closing Fable daemon...
