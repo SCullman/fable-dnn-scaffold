@@ -18,7 +18,7 @@ module.exports = {
   entry: resolve('./Client/Client.fsproj'),
   output: {
     filename: 'bundle.js',
-    path: resolve('./public'),
+    path: resolve('..'),
   },
   resolve: {
     modules: [resolve("./node_modules/")]

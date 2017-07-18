@@ -9,7 +9,7 @@ let buildDir  = "./build/"
 let deployDir = "./deploy/"
 let publicDir ="./public/" 
 
-let dnnDir = "./dnn/" 
+let dnnDir = "./../../../../" //Assuming src is located ~/desktopmodules/vendor/module/
 
 let mutable dotnetExePath = "dotnet"
 let clientPath = "./Client" |> FullName
@@ -44,8 +44,8 @@ Target "Build" (fun _ ->
 )
 
 Target "Build-Client" (fun _ ->
-  runDotnet clientPath "restore"
-  runDotnet clientPath "fable yarn-build"
+    //runDotnet clientPath "restore"
+    runDotnet clientPath "fable yarn-build"
 )
 
 Target "DNN" (fun _ ->
@@ -64,9 +64,11 @@ Target "Deploy" (fun _ ->
 
 // Build order
 "Clean"
+ //
   ==> "Build-Client"
   ==> "Build"
+  ==> "DNN"
   ==> "Deploy"
 
 // start build
-RunTargetOrDefault "Build"
+RunTargetOrDefault "DNN"

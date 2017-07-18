@@ -5,16 +5,16 @@ open Api
 open Fable.Import.Browser
 open Elmish
 
-
 // State
 let init model =
   let model = {
-    ModuleId =  (document.getElementById containerId).dataset.["moduleid"]
-    Ergebnis = None
+    CurrentUser   = None
+    ErrorMessages = []
   }
-  model , helloworldCmd model.ModuleId
+  model, Api().FetchCurrentUser
 
 let update  msg model=
+
   match msg with
-  | HelloWorldFetched s -> {model with Ergebnis = Some s}, Cmd.none
-  | HelloWorldFailed  e -> {model with Ergebnis = Some e.Message}, Cmd.none
+  | UserFetched p  ->  {model with CurrentUser = p}, Cmd.none
+  | FetchFailed  e ->  {model with ErrorMessages = e.Message :: model.ErrorMessages}, Cmd.none

@@ -15,7 +15,7 @@ open State
 
 //view
 let root model dispatch =
- div [ ] [str<|sprintf "module-id %A" model]
+ div [ ] [str<|sprintf "Model: %A" model]
 
 open Elmish.React
 open Elmish.Debug

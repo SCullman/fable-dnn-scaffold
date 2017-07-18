@@ -4,3 +4,5 @@ DotNetNuke.Core
 DotNetNuke.WebApi
 Microsoft.AspNet.WebApi
 System.ValueTuple
+Fable.JsonConverter
+Newtonsoft.Json

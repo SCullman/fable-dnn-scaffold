@@ -15,8 +15,27 @@ type RouteMapper ()=
         rtm.MapHttpRoute  ("fsharp/spike", "withid",  "{controller}/{action}/{id}" ,defaults, namespaces)|>ignore                                
         rtm.MapHttpRoute  ("fsharp/spike", "default", "{controller}/{action}", namespaces)|>ignore                                
            
-type ServiceController () =
+open SharedTypes
+open Newtonsoft.Json
+open System.Net.Http.Formatting
+open DotNetNuke.Security
+
+type ServiceController  ()  =
     inherit DnnApiController ()
+    
+    let formatter = JsonMediaTypeFormatter ( 
+                      SerializerSettings = JsonSerializerSettings (Converters = [|Fable.JsonConverter()|]))
+
+    [<HttpGet>]
+    [<ValidateAntiForgeryToken>] 
+    [<DnnModuleAuthorize(AccessLevel = SecurityAccessLevel.View)>] 
+    member __.CurrentUser () =
+        match  __.User.Identity.IsAuthenticated  with
+                  | true  ->  let user =  { firstName = Some __.UserInfo.FirstName
+                                            lastName  = Some __.UserInfo.LastName  }
+                              __.Request.CreateResponse (HttpStatusCode.OK, Some user, formatter)
+                  | false ->  __.Request.CreateResponse (HttpStatusCode.OK, None)
+        
 
     [<HttpGet>]
     [<AllowAnonymous>]

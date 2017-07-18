@@ -1,12 +1,16 @@
 module Types
 
+
+type Person = SharedTypes.Person
+
 //Types
 type Model ={
-  ModuleId : string
-  Ergebnis : string option
+  CurrentUser: Person option
+  ErrorMessages : string list
 }
+
 type Msgs = 
-  | HelloWorldFetched of string
-  | HelloWorldFailed of exn
+  | UserFetched of Person option
+  | FetchFailed of exn
 
 let containerId = "elmish-container"

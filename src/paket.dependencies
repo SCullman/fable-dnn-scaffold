@@ -1,6 +1,7 @@
 framework: >= netstandard1.6, >= net461
 source https://nuget.org/api/v2
 
+nuget Fable.JsonConverter
 nuget FAKE
 nuget FSharp.Core
 
@@ -12,8 +13,10 @@ nuget Fable.Elmish.React
 nuget Fable.Elmish.Browser
 nuget Fable.Elmish.Debugger
 
+
 //server
 nuget DotNetNuke.Core 8.0.4.226 restriction: >= net461
 nuget DotNetNuke.WebApi 8.0.4.226 restriction: >= net461
 nuget Microsoft.AspNet.WebApi
 nuget System.ValueTuple
+nuget Newtonsoft.Json

@@ -2,24 +2,35 @@ module Api
 open Fable.PowerPack
 open Fable.PowerPack.Fetch.Fetch_types
 open Elmish
+open Fable.Import.Browser
 
 open DNN
 open Types
 
+let moduleName = "fsharp/spike"
+let serviceController = "service"
+
 //Api
-let helloworld moduleId = 
-      promise {    
-        if moduleId ="DEBUG"
-        then
-          return "DEBUG"
-        else
-          let sf = ServiceFramework moduleId    
-          let url = sf.getServiceRoot("fsharp/spike") + "service/" + "helloworld"
+
+type Api () =
+  let moduleId = (document.getElementById Types.containerId).dataset.["moduleid"]
+  let sf = ServiceFramework moduleId    
+  let serviceroot = sf.getServiceRoot(moduleName) + serviceController +  "/"
+  let moduleHeaders = moduleHeaders sf
+
+  let fetchCurrentUser  () = 
+    promise {    
+      if moduleId = "DEBUG"
+      then
+        return  Some { Person.firstName = Some "John"; Person.lastName = Some "Doe"}
+      else  
+          let url = serviceroot + "currentUser"
           let props = 
               [ RequestProperties.Method HttpMethod.GET
-                Fetch.requestHeaders (moduleHeaders sf)
+                Fetch.requestHeaders (moduleHeaders)
+                Credentials RequestCredentials.Sameorigin
               ]
-          return! Fable.PowerPack.Fetch.fetchAs<string> url props
+          return! Fable.PowerPack.Fetch.fetchAs<Person option> url props
     }
 
-let helloworldCmd moduleId = Cmd.ofPromise helloworld moduleId HelloWorldFetched HelloWorldFailed 
+  member self.FetchCurrentUser = Cmd.ofPromise fetchCurrentUser () UserFetched FetchFailed 

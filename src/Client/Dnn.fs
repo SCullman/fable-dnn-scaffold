@@ -17,3 +17,7 @@ let moduleHeaders (sf:IServicesFramework)  = [
     HttpRequestHeaders.Custom ("ModuleId", sf.getModuleId())
     HttpRequestHeaders.Custom ("TabId", sf.getTabId())
     HttpRequestHeaders.Custom ("RequestVerificationToken", sf.getAntiForgeryValue())]
+
+  
+ 
+
